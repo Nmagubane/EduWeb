@@ -1,0 +1,21 @@
+.course {
+  background-color: rgb(240, 240, 240);
+  padding: 50px 100px;
+}
+
+#watch{
+  border-color: blue;
+}
+
+.box{
+  background-color: azure;
+  border-radius: 6px;
+  padding: 10px 20px;
+}
+
+@media screen and (max-width:600px) {
+  .course {
+    background-color: rgb(240, 240, 240);
+    padding: 50px 100px;
+  }
+}

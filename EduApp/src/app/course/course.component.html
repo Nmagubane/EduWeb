@@ -1,0 +1,61 @@
+<section class="course">
+
+  <div class="container row mt-5">
+    <h1 class="text-center">All Courses</h1>
+
+    <div class="docker col-lg-3 mb-5">
+      <div *ngFor="let cs of docker">
+        <div class="box shadow-lg">
+          <img src="{{cs.image}}" width="100%">
+          <p class="mt-2">{{cs.description}}</p>
+          <button onclick="window.location.href='https://www.youtube.com/watch?v=fqMOX6JJhGo';" id="watch" class="btn btn-secondary mt-2">Watch now</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="csharp col-lg-3 mb-5">
+      <div *ngFor="let cs of csharp">
+        <div class="box shadow-lg">
+          <img src="{{cs.image}}" width="100%">
+          <p class="mt-2">{{cs.description}}</p>
+          <button onclick="window.location.href='https://www.youtube.com/watch?v=GhQdlIFylQ8';" id="watch" class="btn btn-secondary mt-2">Watch now</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="java col-lg-3 mb-5">
+      <div *ngFor="let cs of java">
+        <div class="box shadow-lg">
+          <img src="{{cs.image}}" width="100%">
+          <p class="mt-2">{{cs.description}}</p>
+          <button onclick="window.location.href='https://www.youtube.com/watch?v=Qgl81fPcLc8';" id="watch" class="btn btn-secondary mt-2">Watch now</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="spring col-lg-3 mb-5">
+      <div *ngFor="let cs of spring">
+        <div class="box shadow-lg">
+          <img src="{{cs.image}}" width="100%">
+          <p class="mt-2">{{cs.description}}</p>
+          <button onclick="window.location.href='https://www.youtube.com/watch?v=Ke7Tr4RgRTs';" id="watch" class="btn btn-secondary mt-2">Watch now</button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="dotnet col-lg-3 mb-5">
+      <div *ngFor="let cs of dotnet">
+        <div class="box shadow-lg">
+          <img src="{{cs.image}}" width="100%">
+          <p class="mt-2">{{cs.description}}</p>
+          <button onclick="window.location.href='https://www.youtube.com/watch?v=ywN0vTFJNcw&list=RDQMaq8yEIq9i2Y&start_radio=1';" id="watch" class="btn btn-secondary mt-2">Watch now</button>
+        </div>
+      </div>
+    </div>
+    <!-- <video width="150" height="200" controls>
+      <source src="../../assets/Database Tutorial for Beginners.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video> -->
+  </div>
+</section>

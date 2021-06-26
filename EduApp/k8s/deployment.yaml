@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: eduwebapp
+spec:
+  selector:
+    matchLabels:
+      app: eduwebapp
+  template:
+    metadata:
+      labels:
+        app: eduwebapp
+    spec:
+      containers:
+      - name: eduwebapp
+        image: eduwebapp:1.0
+        imagePullPolicy: IfNotPresent
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+      imagePullSecrets:
+      - name: regcred

@@ -1,0 +1,17 @@
+.signup
+{
+  background-color: rgb(255, 248, 239);
+  padding: 140px 100px;
+}
+.login
+{
+  padding: 20px 30px;
+}
+
+@media screen and (max-width:600px)
+{
+  .signup
+  {
+    padding: 140px 30px;
+  }
+}

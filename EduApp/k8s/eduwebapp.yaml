@@ -1,0 +1,13 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: eduwebapp
+spec:
+  template:
+    metadata:
+      name: eduwebapp-pod
+    spec:
+      containers:
+      - name: eduwebapp
+        image: eduwebapp:1.0
+      restartPolicy: Never
